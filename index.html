@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JOB APPLICATION FORM</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+            <h1 id="title" class="text-center">JOB APPLICATION FORM</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to fill up the form</p>
+            </header>
+            <form id="survey-form">
+                <div class="div-group">
+                    <label id="name-label">Name</label>
+                    <input id="name" type="text" class="fieldset-control" placeholder="Enter your name" required>
+                    <label id="email-label">Email</label>
+                    <input id="email" type="email" class="fieldset-control" placeholder="Enter your email" required>
+                    <label id="number-label">Age<span class="clue">(optional)</span></label>
+                    <input id="number" type="number" class="fieldset-control" min="13" max="120" placeholder="Age">
+                    <label id="number-label">Year of Passing</label>
+                    <input id="number" type="number" class="fieldset-control" min="2011" max="2030" placeholder="YOP">
+                </div>
+                <div class="div-group">
+                    <p>Which role defines you well?</p>
+                    <select id="dropdown" class="fieldset-control">
+                        <option disabled selected value>(select current role)</option>
+                        <option value="1">Internship</option>
+                        <option value="2">Full Time Job</option>
+                    </select> 
+                </div>      
+                <div class="div-group">
+                    <p>Are you sure to reallocate?</p>
+                    <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely, I will</label>
+                    <label><input name="user-recommend" value="no" type="radio" class="input-radio" />No, I will not</label>
+                </div>
+                <div>
+                    <p>Describe Yourself in one word.</p>
+                    <select id="feature" class="fieldset-control">
+                        <option disabled selected value>(Select an option)</option>
+                        <option value="1">Smart-Worker</option>
+                        <option value="2">Hard-Worker</option>
+                    </select> 
+                </div>
+                <div class="div-group">
+                    <p>JOB ROLE<span class="clue">(Check all that apply)</span></p>
+                    <label><input name="prefer" value="Frontend Developer" type="checkbox" class="input-checkbox" />Frontend Developer</label>
+                    <label><input name="prefer" value="Backend Developer" type="checkbox" class="input-checkbox" />Backend Developer</label>
+                    <label><input name="prefer" value="Full Stack Developer" type="checkbox" class="input-checkbox" />Full Stack Developer</label>
+                    <label><input name="prefer" value="UI UX Designer" type="checkbox" class="input-checkbox" />UI UX Designer</label>
+                    <label><input name="prefer" value="Software Developer" type="checkbox" class="input-checkbox" />Software Developer</label>
+                    <label><input name="prefer" value="Data Scientist" type="checkbox" class="input-checkbox" />Data Scientist</label>
+                    <label><input name="prefer" value="C++ Developer" type="checkbox" class="input-checkbox" />C++ Developer</label>
+                    <label><input name="prefer" value="Java Developer" type="checkbox" class="input-checkbox" />Java Developer</label>
+                </div>
+                <div class="div-group">
+                    <p>Write Your Skills (separated by ' , ')</p>
+                    <textarea id="skills" class="skills" name="skills" placeholder="Enter your skills here separated by ','">                        
+                    </textarea>
+                </div>
+                <div class="div-group">
+                    <p>Write About Yourself</p>
+                    <textarea id="comments" class="comments" name="comments" placeholder="Enter your comment here...">                        
+                    </textarea>
+                </div>
+                <div class="div-group">
+                    <input type="submit" id="submit" class="submit-button">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
