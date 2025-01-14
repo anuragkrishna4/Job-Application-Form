@@ -22,4 +22,3 @@ This form is an essential tool for recruiters and organizations to streamline th
 - Integration with a backend system for data submission and storage.  
 - Enhanced styling using frameworks like Bootstrap.  
 - Additional validation for robust user input handling.
-- 
